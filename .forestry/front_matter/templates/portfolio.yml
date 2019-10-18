@@ -32,4 +32,5 @@ fields:
   default: []
   label: Tags
 pages:
+- src/portfolio/some-kind-of-name.md
 - src/portfolio/homer-simpson-illustration.md
