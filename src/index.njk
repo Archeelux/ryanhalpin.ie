@@ -2,4 +2,21 @@
 layout: layouts/base.njk
 title: Title Strings
 ---
-<h1>This is global data: {{siteData.name}}</h1>
+
+<div class="columns is-multiline is-mobile">
+    {% for img in collections.portfolio %}
+        <div class="column is-3-desktop is-4-tablet is-6-mobile image-card">
+            <a href="{{ img.url }}" class="image-link">
+                <figure class="image is-square is-fullwidth">
+                    <img src="{{img.data.image}}?nf_resize=fit&w=400&h=450">
+                </figure>
+                <div class="card">
+                    <h2 class="title has-text-white">{{img.data.title}}</h2>
+                    <h3 class="subtitle has-text-light">
+                        Find out more
+                    </h3>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>

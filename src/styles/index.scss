@@ -1,7 +1,9 @@
-@import '_reset.scss';
+@import "../../node_modules/bulma/bulma.sass";
+@import "./components/nav";
+@import "./components/image-card";
 
-$var: white;
-
+html,
 body {
-  background-color: $var;
+  background-color: $black-ter;
+  height: 100%;
 }

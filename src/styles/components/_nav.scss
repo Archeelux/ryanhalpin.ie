@@ -1,0 +1,37 @@
+.site-logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    height: 200px;
+  }
+}
+
+.site-navbar {
+  margin-top: 1.2em;
+  margin-bottom: 1.6em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  a {
+    display: block;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.1s ease-in;
+  }
+
+  a:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  a.active {
+    color: $green;
+    border-bottom: 3px solid $green;
+  }
+
+  a:hover {
+    color: $white;
+    border-color: $green;
+  }
+}
