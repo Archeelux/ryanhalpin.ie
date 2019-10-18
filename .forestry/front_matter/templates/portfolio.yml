@@ -31,6 +31,7 @@ fields:
   type: tag_list
   default: []
   label: Tags
+  description: set to portfolio
 pages:
 - src/portfolio/needs-a-name-my-dude.md
 - src/portfolio/happy-dood.md
