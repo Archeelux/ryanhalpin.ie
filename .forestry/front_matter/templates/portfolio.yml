@@ -33,6 +33,7 @@ fields:
   label: Tags
   description: set to portfolio
 pages:
+- src/portfolio/another-one.md
 - src/portfolio/needs-a-name-my-dude.md
 - src/portfolio/happy-dood.md
 - src/portfolio/some-kind-of-name.md
