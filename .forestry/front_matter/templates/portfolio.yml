@@ -1,4 +1,24 @@
 ---
 label: Portfolio
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+- name: featured
+  type: boolean
+  label: Featured
+  description: will this display on the home page of your site?
+  default: false
