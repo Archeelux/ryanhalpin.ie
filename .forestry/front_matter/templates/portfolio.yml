@@ -27,5 +27,9 @@ fields:
   config:
     maxSize: 250
   label: Image
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
 pages:
 - src/portfolio/homer-simpson-illustration.md
