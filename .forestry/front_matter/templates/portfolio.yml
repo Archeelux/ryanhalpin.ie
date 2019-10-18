@@ -22,3 +22,8 @@ fields:
   label: Featured
   description: will this display on the home page of your site?
   default: false
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
