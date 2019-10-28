@@ -1,6 +1,8 @@
 ---
 layout: layouts/base.njk
 title: Title Strings
----
 
-this is about
+---
+Hi my name is ryan,
+
+I am cool, LULULULULU
