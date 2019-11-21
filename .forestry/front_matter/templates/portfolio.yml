@@ -33,8 +33,8 @@ fields:
   label: Tags
   description: set to portfolio
 pages:
+- src/portfolio/happy-dood.md
 - src/portfolio/another-one.md
-- src/portfolio/homer-simpson-illustration.md
 - src/portfolio/some-kind-of-name.md
 - src/portfolio/needs-a-name-my-dude.md
-- src/portfolio/happy-dood.md
+- src/portfolio/homer-simpson-illustration.md
