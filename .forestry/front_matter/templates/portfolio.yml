@@ -29,7 +29,8 @@ fields:
   label: Image
 - name: tags
   type: tag_list
-  default: []
+  default:
+  - portfolio
   label: Tags
   description: set to portfolio
 - name: layout
