@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/contact.md
   label: Contact
-  match: "**/*"
 - type: document
   path: src/about.md
   label: About
