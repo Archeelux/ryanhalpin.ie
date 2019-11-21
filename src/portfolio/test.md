@@ -1,6 +1,7 @@
 ---
 date: 2019-11-21T15:14:36Z
-tags: []
+tags:
+- portfolio
 layout: layouts/work.njk
 title: Test
 featured: true
