@@ -7,4 +7,4 @@ featured: true
 image: "/images/Untitled-2.jpg"
 
 ---
-Test
+Tests
