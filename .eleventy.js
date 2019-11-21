@@ -7,6 +7,10 @@ module.exports = function(eleventyConfig) {
     return util.inspect(obj);
   });
 
+  eleventyConfig.addFilter("copyRightYear", function(type) {
+    return new Date().getFullYear().toString();
+  });
+
   return {
     dir: { input: "src", output: "dist", data: "_data" },
     passthroughFileCopy: true,
