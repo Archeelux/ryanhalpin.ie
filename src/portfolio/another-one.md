@@ -5,4 +5,5 @@ tags:
 title: Another one
 featured: false
 image: "/images/Photo 17-05-2019, 5 40 00 p.m..jpg"
+layout: layouts/work.njk
 ---

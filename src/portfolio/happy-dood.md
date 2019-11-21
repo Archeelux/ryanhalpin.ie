@@ -5,4 +5,5 @@ tags:
 title: Happy Dood
 featured: false
 image: "/images/Photo 21-05-2019, 9 05 19 p.m..jpg"
+layout: layouts/work.njk
 ---

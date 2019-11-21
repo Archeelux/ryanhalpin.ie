@@ -5,4 +5,5 @@ tags:
 title: Needs a name my dude
 featured: false
 image: "/images/Photo 12-09-2019, 9 33 34 a.m..jpg"
+layout: layouts/work.njk
 ---
