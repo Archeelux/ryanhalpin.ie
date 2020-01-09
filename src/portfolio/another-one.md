@@ -1,9 +1,9 @@
 ---
-date: 2019-10-18T20:11:33.000+00:00
+date: 
 tags:
 - portfolio
-title: Another one
-featured: false
+title: T-SHIRT DESIGN
+featured: true
 image: "/images/Photo 25-09-2019, 4 49 35 p.m..jpg"
 layout: layouts/work.njk
 
