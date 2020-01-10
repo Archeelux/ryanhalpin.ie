@@ -1,5 +1,5 @@
 ---
-date: 
+date: 2020-01-10T00:00:00Z
 tags:
 - portfolio
 title: T-SHIRT DESIGN
