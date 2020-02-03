@@ -2,6 +2,7 @@ const util = require("util");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   eleventyConfig.addFilter("dump", obj => {
     return util.inspect(obj);

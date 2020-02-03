@@ -1,0 +1,36 @@
+---
+title: Ryan Halpin - 404 Page Not Found
+permalink: 404.html
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }}</title>
+        <style>
+            body {
+                background-color: hsl(0, 0%, 4%);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100vh;
+                font-family: Sans-Serif;
+            }
+            img {
+                width: 200px;
+            }
+            a {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../../images/logo.png?nf_resize=fit&w=&h=200" alt="Ryan Halping Logo">
+        <h1>{{ title }}</h1>
+        <p>💔 Looks like you were expecting something here, you may have gotten a broken link! 💔</p>
+        <p><a href="{{ "/" | url }}">Psst! Click here to return to the homepage!</a></p>
+    </body>
+</html>
