@@ -6,7 +6,7 @@ sitemapIgnore: true
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {%- for item in collections.all %}
     <url>
-      <loc>{{ item.url }}</loc>
+      <loc>https://www.ryanhalpin.ie{{ item.url }}</loc>
       {% if item.data.premier.date -%}
         <lastmod>{{ item.data.premier.date }}</lastmod>
       {%- else -%}
