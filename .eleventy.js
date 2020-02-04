@@ -1,4 +1,5 @@
 const util = require("util");
+const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
@@ -16,6 +17,19 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("formatDate", dte =>
     dte ? dte.toISOString() : null
   );
+
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if (outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
+  });
 
   return {
     dir: { input: "src", output: "dist", data: "_data" },

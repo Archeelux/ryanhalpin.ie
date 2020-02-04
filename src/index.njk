@@ -7,7 +7,7 @@ priority: 1
 <div class="columns is-multiline is-mobile">
     {% for img in collections.portfolio %}
         <div class="column is-6-desktop is-6-tablet is-6-mobile image-card">
-            <a href="{{ img.url }}" class="image-link">
+            <a href="{{ img.url }}" title="{{img.data.title}}" class="image-link">
                 <figure class="image is-square is-fullwidth">
                     <img data-src="{{img.data.image}}?nf_resize=fit&w=480&h=480" alt="Image of {{img.data.title}}" class="lazy" src="{{img.data.image}}?nf_resize=fit&w=&h=50">
                 </figure>
