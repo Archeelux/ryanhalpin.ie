@@ -12,8 +12,12 @@ sitemapIgnore: true
       {%- else -%}
         <lastmod>{{ item.date | formatDate }}</lastmod>
       {%- endif %}
-      <changefreq>{{ item.data.changefreq }}</changefreq>
-      <priority>{{ item.data.priority }}</priority>
+      <changefreq>monthly</changefreq>
+      {% if item.data.priority -%}
+        <priority>{{ item.data.priority }}</priority>
+      {%- else -%}
+        <priority>0.5</priority>
+      {%- endif %}
     </url>
   {%- endfor %}
 </urlset>
