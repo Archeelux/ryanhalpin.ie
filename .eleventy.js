@@ -12,6 +12,10 @@ module.exports = function(eleventyConfig) {
     return new Date().getFullYear().toString();
   });
 
+  eleventyConfig.addFilter("formatDate", dte =>
+    dte ? dte.toISOString() : null
+  );
+
   return {
     dir: { input: "src", output: "dist", data: "_data" },
     passthroughFileCopy: true,

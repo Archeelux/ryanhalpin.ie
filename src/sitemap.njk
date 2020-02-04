@@ -8,9 +8,9 @@ sitemapIgnore: true
     <url>
       <loc>https://www.ryanhalpin.ie{{ item.url }}</loc>
       {% if item.data.premier.date -%}
-        <lastmod>{{ item.data.premier.date }}</lastmod>
+        <lastmod>{{ item.data.premier.date | formatDate}}</lastmod>
       {%- else -%}
-        <lastmod>{{ item.date }}</lastmod>
+        <lastmod>{{ item.date | formatDate }}</lastmod>
       {%- endif %}
       <changefreq>{{ item.data.changefreq }}</changefreq>
       <priority>{{ item.data.priority }}</priority>
