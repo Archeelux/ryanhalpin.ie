@@ -1,10 +1,13 @@
 const util = require("util");
 const htmlmin = require("html-minifier");
+const svgContents = require("eleventy-plugin-svg-contents");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
-  eleventyConfig.addPassthroughCopy("src/icons");
+  eleventyConfig.addPassthroughCopy("src/styles/webfonts");
+
+  eleventyConfig.addPlugin(svgContents);
 
   eleventyConfig.addFilter("dump", obj => {
     return util.inspect(obj);
