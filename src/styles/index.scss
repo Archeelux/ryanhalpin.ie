@@ -1,4 +1,7 @@
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "./variables";
 @import "../../node_modules/bulma/bulma.sass";
+@import url("https://fonts.googleapis.com/css?family=Sriracha&display=swap");
 @import "./components/nav";
 @import "./components/image-card";
 @import "./components/footer";
@@ -7,4 +10,20 @@ html,
 body {
   background-color: $black;
   height: 100%;
+}
+
+.content > h1 > * {
+  color: $green;
+}
+
+.content > * {
+  color: hsl(0, 0%, 96%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Sriracha", cursive;
 }

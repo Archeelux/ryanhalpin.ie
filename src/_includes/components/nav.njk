@@ -1,13 +1,13 @@
 <div class="site-logo">
     <a href="/" title="Home Link">
-        <img data-src="../../images/logo.png?nf_resize=fit&w=&h=200" src="../../images/logo.png?nf_resize=fit&w=&h=10" class="lazy" alt="Ryan Halpin a artist and designer">
+        <img data-src="/images/logo.png?nf_resize=fit&w=&h=200" src="../../images/logo.png?nf_resize=fit&w=&h=10" class="lazy" alt="Ryan Halpin a artist and designer">
         <h1 class="title has-text-white">Ryan Halpin</h1>
         <h2 class="subtitle has-text-light">Art & Design</h2>
     </a>
 </div>
 
 <nav class="site-navbar">
-    <a href="/" title="Home Link" class="has-text-white has-text-weight-bold {% if page.url ==  '/' %} active {%endif%}">Home</a>
+    <a href="/" title="Home Link" class="has-text-white has-text-weight-bold {% if page.url ==  '/' or '/portfolio/' in page.url   %} active {%endif%}">Home</a>
     {# <a href="/work/" class="has-text-white has-text-weight-bold {% if page.url ==  '/work/' %} active {%endif%}">Work</a> #}
     <a href="/about/" title="About Link" class="has-text-white has-text-weight-bold {% if page.url ==  '/about/' %} active {%endif%}">About</a>
     <a href="/contact/" title="Contact Link" class="has-text-white has-text-weight-bold {% if page.url ==  '/contact/' %} active {%endif%}">Contact</a>

@@ -8,6 +8,6 @@ image: "/images/photo36.jpg"
 layout: layouts/work.njk
 ---
 
-# **_I DESIGNED SOME T-SHIRTS DURING AUTUMN 2019_**
+# **I DESIGNED SOME T-SHIRTS DURING AUTUMN 2019**
 
 This was my second adventure into the apparel world. My first design was very basic and simple, so with this attempt I wanted something a little more line heavy. At the time of creation I was experimenting with introducing some cubism into my work. The shape of the face was inspired by the great gatsby movie poster and buzz from toy story. I enjoying using only one colour in my designs because it brings more of a focus onto the line work itself. This T-shirt is sold out, but more designs will be available soon.

@@ -3,10 +3,13 @@ layout: layouts/base.njk
 title: Title Strings
 ---
 
-<figure class="image is-fullwidth">
-    <img src="{{image}}" alt="image of '{{img.data.title}}'">
-</figure>
-
-<hr>
-
-{{content | safe}}
+<div class="columns">
+    <div class="column">
+        <figure class="image is-4by5">
+            <img  data-src="{{image}}?nf_resize=fit&w=&h=800" src="{{image}}?nf_resize=fit&w=&h=100" alt="Image of {{title}}" class="lazy" alt="image of '{{title}}'">
+        </figure>
+    </div>
+    <div class="column content">
+        {{content | safe}}
+    </div>
+</div>

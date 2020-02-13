@@ -41,10 +41,5 @@ fields:
   label: Layout
   default: layouts/work.njk
 pages:
+- src/portfolio/Smoking Youth Hoodie/smoking-youth-hoodie.md
 - src/portfolio/another-one.md
-- src/portfolio/happy-dood.md
-- src/portfolio/homer-simpson-illustration.md
-- src/portfolio/needs-a-name-my-dude.md
-- src/portfolio/ryans-test.md
-- src/portfolio/some-kind-of-name.md
-- src/portfolio/test.md
