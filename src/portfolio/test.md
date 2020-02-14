@@ -4,7 +4,7 @@ tags:
 - portfolio
 layout: layouts/work.njk
 title: Test
-featured: false
+featured: true
 image: "/images/rennyaccient.jpg"
 gallery:
 - "/images/photo4.jpg"
