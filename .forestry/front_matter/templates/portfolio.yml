@@ -26,7 +26,13 @@ fields:
   type: file
   config:
     maxSize: 250
-  label: Image
+  label: Featured Image
+  description: This is the image featured on the front page of your website
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: Gallery
+  description: Add multiple images here
 - name: tags
   type: tag_list
   default:
