@@ -5,11 +5,38 @@ title: Title Strings
 
 <div class="columns">
     <div class="column">
-        <figure class="image is-4by5">
+        <figure class="image is-fullwidth image-border">
             <img  data-src="{{image}}?nf_resize=fit&w=&h=800" src="{{image}}?nf_resize=fit&w=&h=100" alt="Image of {{title}}" class="lazy" alt="image of '{{title}}'">
         </figure>
     </div>
     <div class="column content">
         {{content | safe}}
     </div>
+</div>
+
+{% if gallery | length %}
+    <h1 class="is-size-2 has-text-centered">Gallery</h1>
+
+    <div class="columns is-multiline is-mobile">
+        {% for item in gallery %}
+            <div class="column is-3-desktop is-3-tablet is-6-mobile">
+                <figure class="image is-square image-border is-relative magnify-func">
+                    <div class="magnify-outer is-size-2" data-imglink="{{image}}">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <img  data-src="{{item}}?nf_resize=fit&w=&h=400" src="{{item}}?nf_resize=fit&w=&h=100" alt="Image of {{title}}" class="lazy" alt="image of '{{title}}'">
+                </figure>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <p class="image is-4by3">
+            <img alt="">
+        </p>
+    </div>
+    <button class="modal-close is-large" class="lazy" aria-label="close"></button>
 </div>
