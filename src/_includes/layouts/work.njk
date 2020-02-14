@@ -21,22 +21,21 @@ title: Title Strings
         {% for item in gallery %}
             <div class="column is-3-desktop is-3-tablet is-6-mobile">
                 <figure class="image is-square image-border is-relative magnify-func">
-                    <div class="magnify-outer is-size-2" data-imglink="{{image}}">
+                    <div class="magnify-outer is-size-2 modal-button" data-target="model-{{item}}">
                         <i class="fas fa-search-plus"></i>
                     </div>
-                    <img  data-src="{{item}}?nf_resize=fit&w=&h=400" src="{{item}}?nf_resize=fit&w=&h=100" alt="Image of {{title}}" class="lazy" alt="image of '{{title}}'">
+                    <img  data-src="{{item}}?nf_resize=fit&w=&h=400" src="{{item}}?nf_resize=fit&w=&h=100" alt="Image of {{title}}" class="lazy">
                 </figure>
+                <div class="modal" id="model-{{item}}">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <p class="image is-fullwidth">
+                            <img data-src="{{item}}?nf_resize=fit&w=&h=1000" src="{{item}}?nf_resize=fit&w=&h=100" alt="Image of {{title}}" class="lazy">
+                        </p>
+                    </div>
+                    <button class="modal-close is-large" class="lazy" aria-label="close"></button>
+                </div>
             </div>
         {% endfor %}
     </div>
 {% endif %}
-
-<div class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-content">
-        <p class="image is-4by3">
-            <img alt="">
-        </p>
-    </div>
-    <button class="modal-close is-large" class="lazy" aria-label="close"></button>
-</div>
