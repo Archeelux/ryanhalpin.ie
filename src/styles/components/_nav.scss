@@ -12,26 +12,42 @@
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
 
-  a {
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  div:nth-child(1) a {
     display: block;
     border-bottom: 3px solid transparent;
     transition: border-color 0.1s ease-in;
   }
 
-  a:not(:first-child) {
+  div:nth-child(1) a:not(:first-child) {
     margin-left: 10px;
   }
 
-  a.active {
+  div:nth-child(1) a.active {
     color: $green;
     border-bottom: 3px solid $green;
   }
 
-  a:hover {
+  div:nth-child(1) a:hover {
     color: $white;
     border-color: $green;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  color: $green;
+  font-weight: bold;
+
+  &:hover {
+    color: $red;
   }
 }

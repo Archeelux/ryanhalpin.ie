@@ -6,22 +6,17 @@
 @import "./components/image-card";
 @import "./components/footer";
 
-$fa-font-path: "./webfonts";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-
 html,
 body {
   background-color: $black;
   height: 100%;
 }
 
-.content > h1 > * {
+.content>h1>* {
   color: $green;
 }
 
-.content > * {
+.content>* {
   color: hsl(0, 0%, 96%);
 }
 
@@ -54,4 +49,8 @@ h5 {
       pointer-events: none;
     }
   }
+}
+
+.feather {
+  width: 30px;
 }
