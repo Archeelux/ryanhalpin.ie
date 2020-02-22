@@ -1,0 +1,25 @@
+.contact {
+
+  .control {
+
+    input,
+    textarea {
+      background-color: transparent;
+      border: 0;
+      color: white;
+      border-bottom: 5px $green solid;
+      border-radius: 0;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    // button {
+    //   display: flex;
+    //   align-items: center;
+    // }
+
+
+  }
+}

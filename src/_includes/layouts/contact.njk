@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Contact
 ---
 
-<div class="columns">
+<div class="columns contact">
     <div class="column">
         {{content | safe}}
     </div>
@@ -28,9 +28,12 @@ title: Contact
                 </div>
             </div>
 
-            <p>
-                <button class="button is-link" type="submit">Send</button>
-            </p>
+            <div>
+                <button class="button is-outlined" type="submit">
+                    <i data-feather="send" class="feather-sm"></i>
+                    <span>Send</span>
+                </button>
+            </div>
 
         </form>
     </div>

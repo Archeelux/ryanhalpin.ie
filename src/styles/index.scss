@@ -5,6 +5,7 @@
 @import "./components/nav";
 @import "./components/image-card";
 @import "./components/footer";
+@import "./components/contact";
 
 html,
 body {
@@ -52,5 +53,9 @@ h5 {
 }
 
 .feather {
+  width: 30px;
+}
+
+.feather-sm {
   width: 30px;
 }
