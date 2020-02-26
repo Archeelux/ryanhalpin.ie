@@ -8,10 +8,10 @@
 
 <nav class="site-navbar">
     <div>
-        <a href="/" title="Home Link" class="has-text-white has-text-weight-bold {% if page.url ==  '/' or '/portfolio/' in page.url   %} active {%endif%}">Home</a>
+        <a href="/" title="Home Link" class="{% if page.url ==  '/' or '/portfolio/' in page.url   %} active {%endif%}">Home</a>
         {# <a href="/work/" class="has-text-white has-text-weight-bold {% if page.url ==  '/work/' %} active {%endif%}">Work</a> #}
-        <a href="/about/" title="About Link" class="has-text-white has-text-weight-bold {% if page.url ==  '/about/' %} active {%endif%}">About</a>
-        <a href="/contact/" title="Contact Link" class="has-text-white has-text-weight-bold {% if page.url ==  '/contact/' %} active {%endif%}">Contact</a>
+        <a href="/about/" title="About Link" class="{% if page.url ==  '/about/' %} active {%endif%}">About</a>
+        <a href="/contact/" title="Contact Link" class="{% if page.url ==  '/contact/' %} active {%endif%}">Contact</a>
     </div>
     <div>
         <a class="socials" href="https://www.instagram.com/halpins_creations/">

@@ -14,25 +14,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid $green;
 
   div {
     display: flex;
     align-items: center;
+
+    a {
+      font-weight: bold;
+      color: $white;
+    }
   }
 
   div:nth-child(1) a {
     display: block;
-    border-bottom: 3px solid transparent;
+    border-bottom: 5px solid transparent;
     transition: border-color 0.1s ease-in;
   }
 
   div:nth-child(1) a:not(:first-child) {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   div:nth-child(1) a.active {
     color: $green;
-    border-bottom: 3px solid $green;
+    border-color: $green;
+
+    &:hover {
+      color: $green;
+    }
   }
 
   div:nth-child(1) a:hover {
@@ -44,10 +54,15 @@
 .socials {
   display: flex;
   align-items: center;
-  color: $green;
+  color: $white;
   font-weight: bold;
+  padding-bottom: 5px;
+
+  span {
+    margin-left: 5px;
+  }
 
   &:hover {
-    color: $red;
+    color: $green;
   }
 }

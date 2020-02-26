@@ -52,10 +52,23 @@ h5 {
   }
 }
 
-.feather {
-  width: 30px;
-}
+.base--wrapper {
+  height: 100vh;
 
-.feather-sm {
-  width: 30px;
+  .container {
+    height: 100vh;
+  }
+
+  .inner--wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+    .content--wrapper {
+      flex: 1;
+    }
+  }
 }

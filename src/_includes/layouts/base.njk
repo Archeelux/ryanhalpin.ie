@@ -79,16 +79,21 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		</noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<section class="section">
-			<div class="container has-text-white">
-				{# Nav #}
-				{%include "../components/nav.njk" %}
-				{# Main Section #}
-				{{content | safe}}
-				{# Footer #}
-				{%include "../components/footer.njk" %}
+
+		<div class="base--wrapper">
+			<div class="container">
+				<div class="inner--wrapper">
+					{# Nav #}
+					{%include "../components/nav.njk" %}
+					{# Main Section #}
+					<div class="content--wrapper">
+						{{content | safe}}
+					</div>
+					{# Footer #}
+					{%include "../components/footer.njk" %}
+				</div>
 			</div>
-		</section>
+		</div>
 
 		<script src="https://unpkg.com/feather-icons"></script>
 		<script>
