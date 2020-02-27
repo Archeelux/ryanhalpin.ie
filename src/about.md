@@ -1,6 +1,7 @@
 ---
 layout: layouts/about.njk
 title: About
+about_image:
 ---
 
 # My name is Ryan Halpin
