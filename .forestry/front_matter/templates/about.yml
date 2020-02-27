@@ -1,4 +1,9 @@
 ---
 label: About
 hide_body: false
-fields: []
+fields:
+- name: about_image
+  type: file
+  config:
+    maxSize: 250
+  label: About Image
