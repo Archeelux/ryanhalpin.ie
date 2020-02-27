@@ -5,9 +5,12 @@ title: Title Strings
 
 <div class="columns">
     <div class="column">
-        <figure class="image image-border">
-            <img  data-src="{{about_image}}?nf_resize=fit&w=&h=800" src="{{image}}?nf_resize=fit&w=&h=100" alt="Image of {{title}}" class="lazy" alt="image of '{{title}}'">
-        </figure>
+        <div class="image-border">
+            <figure class="image is-square is-fullwidth">
+                <img data-src="{{about_image}}?nf_resize=fit&w=&h=800" alt="Image of {{img.data.title}}" class="lazy" src="{{about_image}}?nf_resize=fit&w=&h=50">
+            </figure>
+        </div>
+
     </div>
     <div class="column">
         <div class="content">
