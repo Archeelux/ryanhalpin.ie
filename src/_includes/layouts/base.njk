@@ -108,18 +108,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		</noscript>
 		<!-- End Google Tag Manager (noscript) -->
 
-		<div class="base--wrapper">
-			<div class="container">
-				<div class="inner--wrapper">
+		<div class="container">
+			<div class="base--wrapper">
+				<div class="container">
+					<div class="inner--wrapper">
 
-					{# Nav #}
-					{%include "../components/nav.njk" %}
-					{# Main Section #}
-					<div class="content--wrapper">
-						{{content | safe}}
+						{# Nav #}
+						{%include "../components/nav.njk" %}
+						{# Main Section #}
+						<div class="content--wrapper">
+							{{content | safe}}
+						</div>
+						{# Footer #}
+						{%include "../components/footer.njk" %}
 					</div>
-					{# Footer #}
-					{%include "../components/footer.njk" %}
 				</div>
 			</div>
 		</div>

@@ -53,5 +53,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
   }
 
-  window.setTimeout(a => (document.querySelector("body").classList = ""), 350);
+  window.setTimeout(
+    a => (document.querySelector("body").classList = "none"),
+    350
+  );
 });
