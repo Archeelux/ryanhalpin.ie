@@ -3,38 +3,42 @@ layout: layouts/base.njk
 title: Contact
 ---
 
-<div class="columns contact">
+<div class="columns">
+    <div class="column is-one-quarter"></div>
     <div class="column">
-        {{content | safe}}
+        <div class="section content">
+            {{content | safe}}
+        </div>
+
+        <div class="section contact">
+            <form name="contact" method="POST" data-netlify="true">
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input" placeholder="Name" type="text" name="name"/>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input" placeholder="Email" type="email" name="email"/>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Message" name="message"></textarea>
+                    </div>
+                </div>
+
+                <div class="has-text-centered">
+                    <button class="button is-dark" type="submit">
+                        <span>👋 Say Hi (send)</span>
+                    </button>
+                </div>
+
+            </form>
+        </div>
     </div>
-    <div class="column">
-        <form name="contact" method="POST" data-netlify="true">
-
-            <div class="field">
-                <div class="control">
-                    <input class="input" placeholder="Name" type="text" name="name"/>
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <input class="input" placeholder="Email" type="email" name="email"/>
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <textarea class="textarea" placeholder="Message" name="message"></textarea>
-                </div>
-            </div>
-
-            <div>
-                <button class="button is-outlined" type="submit">
-                    <i data-feather="send" class="feather-sm"></i>
-                    <span>Send</span>
-                </button>
-            </div>
-
-        </form>
-    </div>
+    <div class="column is-one-quarter"></div>
 </div>

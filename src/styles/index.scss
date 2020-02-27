@@ -11,6 +11,17 @@ html,
 body {
   background-color: $black;
   height: 100%;
+  position: relative;
+}
+
+body {
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: none;
 }
 
 .content>h1>* {
@@ -60,6 +71,7 @@ h5 {
   }
 
   .inner--wrapper {
+    position: relative;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -71,4 +83,8 @@ h5 {
       flex: 1;
     }
   }
+}
+
+a {
+  color: $green;
 }

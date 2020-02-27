@@ -52,4 +52,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function getAll(selector) {
     return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
   }
+
+  window.setTimeout(a => (document.querySelector("body").classList = ""), 350);
 });

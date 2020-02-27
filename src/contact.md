@@ -3,10 +3,4 @@ layout: layouts/contact.njk
 title: Contact
 ---
 
-This is contact for rayn halpin.
-
-Things to do for ryan:
-
-- Create email domain chain for like me@ryanhalpin.ie
-- test the contact form see if it sends email when form is complete
-- Make the contact page a bit higher (lmao) add a title heading above the contact page
+Best way to contact me currently is through <a target="_blank" href="https://www.instagram.com/halpins_creations/">Instagram</a>, otherwise you can shoot me an email at <a href="mailto:hiddenfaceclothing@gmail.com">hiddenfaceclothing@gmail.com</a> or send a message via the form below!
