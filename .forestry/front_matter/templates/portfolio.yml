@@ -47,5 +47,6 @@ fields:
   label: Layout
   default: layouts/work.njk
 pages:
+- src/portfolio/DIGITAL WORK /digital-work.md
 - src/portfolio/Smoking Youth Hoodie/smoking-youth-hoodie.md
 - src/portfolio/another-one.md
